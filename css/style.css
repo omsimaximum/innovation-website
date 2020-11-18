@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* START OF HEADER */
+header {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 19, 44, 0.6), rgba(4, 19, 44, 0.6)),
+    url('../pexels-luis-quintero-2774556.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+header h1 {
+  font-weight: 500;
+  max-width: 800px;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+header p.connect {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+header a.btn {
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 15px;
+  color: white;
+  transition: ease 0.6s;
+  border-bottom: 2px solid black;
+}
+header a.btn:hover {
+  border-bottom: 2px solid white;
+}
+
+@media only screen and (max-width: 650px) {
+  header h1 {
+    font-size: 50px;
+  }
+  header p.connect {
+    font-size: 15px;
+  }
+}
+
+/* END OF HEADER */
+
+/* START OF NAV LINKS */
+
+div.nav-links {
+  width: 100%;
+  background-color: white;
+}
+
+div.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+div.nav-links ul li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+div.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 0px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  border: 1px solid white;
+  transition: linear 0.5s;
+}
+
+div.nav-links ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* END OF NAV LINKS */
+
+/* SECTION FOR INNOVATION CLOUD */
+div.container {
+  display: flex;
+  padding: 50px 10%;
+}
+div.container i {
+  font-size: 200px;
+}
+div.box1 {
+  flex-basis: 30%;
+  text-align: center;
+}
+div.box2 {
+  flex-basis: 70%;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 650px) {
+  div.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  div.box2 {
+    margin-top: 10px;
+  }
+}
+/* END OFSECTION FOR INNOVATION CLOUD */
+
+/* CONNECTED SECTION */
+div.connected {
+  width: 100%;
+  height: 80vh;
+  background-color: blue;
+  background-image: linear-gradient(rgba(4, 19, 44, 0.6), rgba(4, 19, 44, 0.6)),
+    url('../pexels-aleksandar-pasaric-2341830.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+div.cont {
+  width: 80%;
+  margin: auto;
+  height: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+div .cont h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+div .cont p {
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+div.connected a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  border: 1px solid white;
+}
+div.connected a:hover {
+  background-color: black;
+  color: white;
+}
+
+div.connected .icons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+div.connected .icons i {
+  font-size: 40px;
+  color: white;
+  transition: ease 0.5s;
+}
+div.connected .icons i:hover {
+  transform: translateY(10px);
+}
+
+/* END CONNECTED SECTION */
+
+img {
+  filter: grayscale(100%);
+}
